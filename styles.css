@@ -1,0 +1,79 @@
+/*root used to declare global constants*/
+:root {
+    /*constants for colours*/
+    --green: #00FF00;
+    --white: #FFFF;
+    --black: #000000;
+    --red: #f44336;
+    --blue: #008CBA;
+    --orange: #f09942;
+}
+
+.titleDiv {
+  background-color: var(--white);
+  border-style: groove;
+  border-color: var(--black);
+}
+
+#title {
+  text-align: center;
+}
+
+.radioArr {
+  accent-color: var(--red);
+}
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+/* ul {
+    font-family: helvetica;
+} */
+
+li {
+    list-style: circle;
+  }
+  
+  /*
+    .list is for class="list" elements in html
+  */
+  .list {
+    list-style: square;
+  }
+  
+  /*
+    #msg is for id="msg" elements in html
+  */
+  #msg {
+    text-align: center;
+  }
+
+  .theme {
+    --fontColor: var(--black); /*font colour*/
+    --bg: var(--orange); /*background colour*/
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+
+    --hoverBg: var(--blue);
+    --hoverClr: var(--black);
+}
+
+.btn {
+    position: absolute;
+    border: none;
+    padding: 30px 30px;
+    border-radius: 8px;
+    font-size: medium;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+
+  background-color: var(--hoverBg);
+  color: var(--hoverClr);
+}

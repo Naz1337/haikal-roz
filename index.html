@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sh*t Post Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <div class="titleDiv">
+        <h1 id="title">Sh*tpost Generator</h1>
+    </div>
+
+    <body class="theme">
+
+        <div>
+            <p id = "msg">This&#128166website&#128166copies&#128166the&#128166defined&#128166emoji&#128166in&#128166between&#128166each&#128166word&#128166in&#128166your&#128166text.</p>
+        </div>
+
+        <div>
+        <!-- Input for input text from the user -->
+            <label for="inputText">Input your text here:</label>
+            <br>
+
+            <textarea id="inputText" name="inputText" rows="4" cols="100"></textarea>
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <!-- Input for input text of emojis from the user -->
+            <label for="emoteText">Input your String of emojis here (Include spaces in-between emotes to separate sequentially):</label>
+            <br>
+
+            <textarea id="emoteText" name="emoteText" rows="1" cols="25"></textarea>
+        </div>
+
+        <br>
+
+        <!-- Radio buttons to choose arrangement choices for emojis -->
+        <div>
+            <label>Choose how the emojis are arranged:</label><br>
+            <input checked type="radio" id="Seq" name="arrangeChoice" value="Seq" class="radioArr">
+            <label for="Seq">Sequential</label><br>
+            <input type="radio" id="Coll" name="arrangeChoice" value="Coll" class="radioArr">
+            <label for="Seq">Collective</label><br>
+
+        </div>
+
+        <br>
+
+        <!-- Button To Convert the Text -->
+        <div>
+            <button class="btn">Shitpost it!</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <!-- Output Text -->        
+            <label for="outputText">Feel Free to Shitpost:</label>
+            <br>
+
+            <textarea id="outputText" name="outputText" rows="4" cols="100" readonly></textarea>
+        </div>
+
+        <script src="app.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </body>
+</html>

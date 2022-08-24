@@ -72,6 +72,24 @@ li {
     transition-duration: 0.4s;
 }
 
+.copyBtn {
+  position: absolute;
+  border: none;
+  padding: 30px 30px;
+  border-radius: 8px;
+  font-size: medium;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+
+  transition-duration: 0.4s;
+}
+
+.copyBtn:hover {
+
+  background-color: var(--hoverBg);
+  color: var(--hoverClr);
+}
+
 .btn:hover {
 
   background-color: var(--hoverBg);
